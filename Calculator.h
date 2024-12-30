@@ -53,19 +53,29 @@ namespace CalculatorNET {
 
 
 	private: System::Windows::Forms::Button^ butn_equal;
+	private: System::Windows::Forms::Button^ button_7;
+	private: System::Windows::Forms::Button^ button_8;
+	private: System::Windows::Forms::Button^ button_9;
+	private: System::Windows::Forms::Button^ button_6;
 
-	private: System::Windows::Forms::Button^ button5;
-	private: System::Windows::Forms::Button^ button6;
-	private: System::Windows::Forms::Button^ button7;
-	private: System::Windows::Forms::Button^ button8;
-	private: System::Windows::Forms::Button^ button9;
-	private: System::Windows::Forms::Button^ button10;
-	private: System::Windows::Forms::Button^ button11;
-	private: System::Windows::Forms::Button^ button12;
-	private: System::Windows::Forms::Button^ button13;
+
+
+
+
+	private: System::Windows::Forms::Button^ button_5;
+
+	private: System::Windows::Forms::Button^ button_4;
+	private: System::Windows::Forms::Button^ button_3;
+
+
+	private: System::Windows::Forms::Button^ button_2;
+
+	private: System::Windows::Forms::Button^ button_1;
+
 	private: System::Windows::Forms::Button^ dot;
+	private: System::Windows::Forms::Button^ button_0;
 
-	private: System::Windows::Forms::Button^ button15;
+
 	private: System::Windows::Forms::Button^ procent;
 	private: System::Windows::Forms::Button^ butn_plus;
 	private: System::Windows::Forms::Button^ butn_minus;
@@ -107,17 +117,17 @@ namespace CalculatorNET {
 			this->clear_butn = (gcnew System::Windows::Forms::Button());
 			this->znak_minus = (gcnew System::Windows::Forms::Button());
 			this->butn_equal = (gcnew System::Windows::Forms::Button());
-			this->button5 = (gcnew System::Windows::Forms::Button());
-			this->button6 = (gcnew System::Windows::Forms::Button());
-			this->button7 = (gcnew System::Windows::Forms::Button());
-			this->button8 = (gcnew System::Windows::Forms::Button());
-			this->button9 = (gcnew System::Windows::Forms::Button());
-			this->button10 = (gcnew System::Windows::Forms::Button());
-			this->button11 = (gcnew System::Windows::Forms::Button());
-			this->button12 = (gcnew System::Windows::Forms::Button());
-			this->button13 = (gcnew System::Windows::Forms::Button());
+			this->button_7 = (gcnew System::Windows::Forms::Button());
+			this->button_8 = (gcnew System::Windows::Forms::Button());
+			this->button_9 = (gcnew System::Windows::Forms::Button());
+			this->button_6 = (gcnew System::Windows::Forms::Button());
+			this->button_5 = (gcnew System::Windows::Forms::Button());
+			this->button_4 = (gcnew System::Windows::Forms::Button());
+			this->button_3 = (gcnew System::Windows::Forms::Button());
+			this->button_2 = (gcnew System::Windows::Forms::Button());
+			this->button_1 = (gcnew System::Windows::Forms::Button());
 			this->dot = (gcnew System::Windows::Forms::Button());
-			this->button15 = (gcnew System::Windows::Forms::Button());
+			this->button_0 = (gcnew System::Windows::Forms::Button());
 			this->procent = (gcnew System::Windows::Forms::Button());
 			this->butn_plus = (gcnew System::Windows::Forms::Button());
 			this->butn_minus = (gcnew System::Windows::Forms::Button());
@@ -130,7 +140,7 @@ namespace CalculatorNET {
 			this->result_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 25, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->result_label->ForeColor = System::Drawing::SystemColors::Control;
-			this->result_label->Location = System::Drawing::Point(12, 19);
+			this->result_label->Location = System::Drawing::Point(12, 9);
 			this->result_label->Name = L"result_label";
 			this->result_label->Size = System::Drawing::Size(312, 96);
 			this->result_label->TabIndex = 4;
@@ -181,131 +191,131 @@ namespace CalculatorNET {
 			this->butn_equal->UseVisualStyleBackColor = false;
 			this->butn_equal->Click += gcnew System::EventHandler(this, &Calculator::butn_equal_Click);
 			// 
-			// button5
+			// button_7
 			// 
-			this->button5->BackColor = System::Drawing::Color::DimGray;
-			this->button5->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button_7->BackColor = System::Drawing::Color::DimGray;
+			this->button_7->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->button_7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button5->Location = System::Drawing::Point(12, 193);
-			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(70, 60);
-			this->button5->TabIndex = 23;
-			this->button5->Text = L"7";
-			this->button5->UseVisualStyleBackColor = false;
-			this->button5->Click += gcnew System::EventHandler(this, &Calculator::ButnNum_Click);
+			this->button_7->Location = System::Drawing::Point(12, 193);
+			this->button_7->Name = L"button_7";
+			this->button_7->Size = System::Drawing::Size(70, 60);
+			this->button_7->TabIndex = 23;
+			this->button_7->Text = L"7";
+			this->button_7->UseVisualStyleBackColor = false;
+			this->button_7->Click += gcnew System::EventHandler(this, &Calculator::ButnNum_Click);
 			// 
-			// button6
+			// button_8
 			// 
-			this->button6->BackColor = System::Drawing::Color::DimGray;
-			this->button6->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->button6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button_8->BackColor = System::Drawing::Color::DimGray;
+			this->button_8->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->button_8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button6->Location = System::Drawing::Point(88, 193);
-			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(70, 60);
-			this->button6->TabIndex = 24;
-			this->button6->Text = L"8";
-			this->button6->UseVisualStyleBackColor = false;
-			this->button6->Click += gcnew System::EventHandler(this, &Calculator::ButnNum_Click);
+			this->button_8->Location = System::Drawing::Point(88, 193);
+			this->button_8->Name = L"button_8";
+			this->button_8->Size = System::Drawing::Size(70, 60);
+			this->button_8->TabIndex = 24;
+			this->button_8->Text = L"8";
+			this->button_8->UseVisualStyleBackColor = false;
+			this->button_8->Click += gcnew System::EventHandler(this, &Calculator::ButnNum_Click);
 			// 
-			// button7
+			// button_9
 			// 
-			this->button7->BackColor = System::Drawing::Color::DimGray;
-			this->button7->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->button7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button_9->BackColor = System::Drawing::Color::DimGray;
+			this->button_9->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->button_9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button7->Location = System::Drawing::Point(164, 193);
-			this->button7->Name = L"button7";
-			this->button7->Size = System::Drawing::Size(70, 60);
-			this->button7->TabIndex = 25;
-			this->button7->Text = L"9";
-			this->button7->UseVisualStyleBackColor = false;
-			this->button7->Click += gcnew System::EventHandler(this, &Calculator::ButnNum_Click);
+			this->button_9->Location = System::Drawing::Point(164, 193);
+			this->button_9->Name = L"button_9";
+			this->button_9->Size = System::Drawing::Size(70, 60);
+			this->button_9->TabIndex = 25;
+			this->button_9->Text = L"9";
+			this->button_9->UseVisualStyleBackColor = false;
+			this->button_9->Click += gcnew System::EventHandler(this, &Calculator::ButnNum_Click);
 			// 
-			// button8
+			// button_6
 			// 
-			this->button8->BackColor = System::Drawing::Color::DimGray;
-			this->button8->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->button8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button_6->BackColor = System::Drawing::Color::DimGray;
+			this->button_6->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->button_6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button8->Location = System::Drawing::Point(164, 259);
-			this->button8->Name = L"button8";
-			this->button8->Size = System::Drawing::Size(70, 60);
-			this->button8->TabIndex = 28;
-			this->button8->Text = L"6";
-			this->button8->UseVisualStyleBackColor = false;
-			this->button8->Click += gcnew System::EventHandler(this, &Calculator::ButnNum_Click);
+			this->button_6->Location = System::Drawing::Point(164, 259);
+			this->button_6->Name = L"button_6";
+			this->button_6->Size = System::Drawing::Size(70, 60);
+			this->button_6->TabIndex = 28;
+			this->button_6->Text = L"6";
+			this->button_6->UseVisualStyleBackColor = false;
+			this->button_6->Click += gcnew System::EventHandler(this, &Calculator::ButnNum_Click);
 			// 
-			// button9
+			// button_5
 			// 
-			this->button9->BackColor = System::Drawing::Color::DimGray;
-			this->button9->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->button9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button_5->BackColor = System::Drawing::Color::DimGray;
+			this->button_5->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->button_5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button9->Location = System::Drawing::Point(88, 259);
-			this->button9->Name = L"button9";
-			this->button9->Size = System::Drawing::Size(70, 60);
-			this->button9->TabIndex = 27;
-			this->button9->Text = L"5";
-			this->button9->UseVisualStyleBackColor = false;
-			this->button9->Click += gcnew System::EventHandler(this, &Calculator::ButnNum_Click);
+			this->button_5->Location = System::Drawing::Point(88, 259);
+			this->button_5->Name = L"button_5";
+			this->button_5->Size = System::Drawing::Size(70, 60);
+			this->button_5->TabIndex = 27;
+			this->button_5->Text = L"5";
+			this->button_5->UseVisualStyleBackColor = false;
+			this->button_5->Click += gcnew System::EventHandler(this, &Calculator::ButnNum_Click);
 			// 
-			// button10
+			// button_4
 			// 
-			this->button10->BackColor = System::Drawing::Color::DimGray;
-			this->button10->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->button10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button_4->BackColor = System::Drawing::Color::DimGray;
+			this->button_4->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->button_4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button10->Location = System::Drawing::Point(12, 259);
-			this->button10->Name = L"button10";
-			this->button10->Size = System::Drawing::Size(70, 60);
-			this->button10->TabIndex = 26;
-			this->button10->Text = L"4";
-			this->button10->UseVisualStyleBackColor = false;
-			this->button10->Click += gcnew System::EventHandler(this, &Calculator::ButnNum_Click);
+			this->button_4->Location = System::Drawing::Point(12, 259);
+			this->button_4->Name = L"button_4";
+			this->button_4->Size = System::Drawing::Size(70, 60);
+			this->button_4->TabIndex = 26;
+			this->button_4->Text = L"4";
+			this->button_4->UseVisualStyleBackColor = false;
+			this->button_4->Click += gcnew System::EventHandler(this, &Calculator::ButnNum_Click);
 			// 
-			// button11
+			// button_3
 			// 
-			this->button11->BackColor = System::Drawing::Color::DimGray;
-			this->button11->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->button11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button_3->BackColor = System::Drawing::Color::DimGray;
+			this->button_3->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->button_3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button11->Location = System::Drawing::Point(164, 325);
-			this->button11->Name = L"button11";
-			this->button11->Size = System::Drawing::Size(70, 60);
-			this->button11->TabIndex = 31;
-			this->button11->Text = L"3";
-			this->button11->UseVisualStyleBackColor = false;
-			this->button11->Click += gcnew System::EventHandler(this, &Calculator::ButnNum_Click);
+			this->button_3->Location = System::Drawing::Point(164, 325);
+			this->button_3->Name = L"button_3";
+			this->button_3->Size = System::Drawing::Size(70, 60);
+			this->button_3->TabIndex = 31;
+			this->button_3->Text = L"3";
+			this->button_3->UseVisualStyleBackColor = false;
+			this->button_3->Click += gcnew System::EventHandler(this, &Calculator::ButnNum_Click);
 			// 
-			// button12
+			// button_2
 			// 
-			this->button12->BackColor = System::Drawing::Color::DimGray;
-			this->button12->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->button12->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button_2->BackColor = System::Drawing::Color::DimGray;
+			this->button_2->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->button_2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button12->Location = System::Drawing::Point(88, 325);
-			this->button12->Name = L"button12";
-			this->button12->Size = System::Drawing::Size(70, 60);
-			this->button12->TabIndex = 30;
-			this->button12->Text = L"2";
-			this->button12->UseVisualStyleBackColor = false;
-			this->button12->Click += gcnew System::EventHandler(this, &Calculator::ButnNum_Click);
+			this->button_2->Location = System::Drawing::Point(88, 325);
+			this->button_2->Name = L"button_2";
+			this->button_2->Size = System::Drawing::Size(70, 60);
+			this->button_2->TabIndex = 30;
+			this->button_2->Text = L"2";
+			this->button_2->UseVisualStyleBackColor = false;
+			this->button_2->Click += gcnew System::EventHandler(this, &Calculator::ButnNum_Click);
 			// 
-			// button13
+			// button_1
 			// 
-			this->button13->BackColor = System::Drawing::Color::DimGray;
-			this->button13->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->button13->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button_1->BackColor = System::Drawing::Color::DimGray;
+			this->button_1->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->button_1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button13->Location = System::Drawing::Point(12, 325);
-			this->button13->Name = L"button13";
-			this->button13->Size = System::Drawing::Size(70, 60);
-			this->button13->TabIndex = 29;
-			this->button13->Text = L"1";
-			this->button13->UseVisualStyleBackColor = false;
-			this->button13->Click += gcnew System::EventHandler(this, &Calculator::ButnNum_Click);
+			this->button_1->Location = System::Drawing::Point(12, 325);
+			this->button_1->Name = L"button_1";
+			this->button_1->Size = System::Drawing::Size(70, 60);
+			this->button_1->TabIndex = 29;
+			this->button_1->Text = L"1";
+			this->button_1->UseVisualStyleBackColor = false;
+			this->button_1->Click += gcnew System::EventHandler(this, &Calculator::ButnNum_Click);
 			// 
 			// dot
 			// 
@@ -321,19 +331,19 @@ namespace CalculatorNET {
 			this->dot->UseVisualStyleBackColor = false;
 			this->dot->Click += gcnew System::EventHandler(this, &Calculator::dot_Click);
 			// 
-			// button15
+			// button_0
 			// 
-			this->button15->BackColor = System::Drawing::Color::DimGray;
-			this->button15->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->button15->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button_0->BackColor = System::Drawing::Color::DimGray;
+			this->button_0->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->button_0->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button15->Location = System::Drawing::Point(88, 391);
-			this->button15->Name = L"button15";
-			this->button15->Size = System::Drawing::Size(70, 60);
-			this->button15->TabIndex = 33;
-			this->button15->Text = L"0";
-			this->button15->UseVisualStyleBackColor = false;
-			this->button15->Click += gcnew System::EventHandler(this, &Calculator::ButnNum_Click);
+			this->button_0->Location = System::Drawing::Point(88, 391);
+			this->button_0->Name = L"button_0";
+			this->button_0->Size = System::Drawing::Size(70, 60);
+			this->button_0->TabIndex = 33;
+			this->button_0->Text = L"0";
+			this->button_0->UseVisualStyleBackColor = false;
+			this->button_0->Click += gcnew System::EventHandler(this, &Calculator::ButnNum_Click);
 			// 
 			// procent
 			// 
@@ -416,17 +426,17 @@ namespace CalculatorNET {
 			this->Controls->Add(this->butn_minus);
 			this->Controls->Add(this->butn_plus);
 			this->Controls->Add(this->dot);
-			this->Controls->Add(this->button15);
+			this->Controls->Add(this->button_0);
 			this->Controls->Add(this->procent);
-			this->Controls->Add(this->button11);
-			this->Controls->Add(this->button12);
-			this->Controls->Add(this->button13);
-			this->Controls->Add(this->button8);
-			this->Controls->Add(this->button9);
-			this->Controls->Add(this->button10);
-			this->Controls->Add(this->button7);
-			this->Controls->Add(this->button6);
-			this->Controls->Add(this->button5);
+			this->Controls->Add(this->button_3);
+			this->Controls->Add(this->button_2);
+			this->Controls->Add(this->button_1);
+			this->Controls->Add(this->button_6);
+			this->Controls->Add(this->button_5);
+			this->Controls->Add(this->button_4);
+			this->Controls->Add(this->button_9);
+			this->Controls->Add(this->button_8);
+			this->Controls->Add(this->button_7);
 			this->Controls->Add(this->butn_equal);
 			this->Controls->Add(this->znak_minus);
 			this->Controls->Add(this->clear_butn);
