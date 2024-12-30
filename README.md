@@ -1,2 +1,2 @@
 # CalculatorNET
-Калькулятор с использованием .NET framework
+Калькулятор с использованием C++ .NET framework WinForm
